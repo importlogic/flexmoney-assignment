@@ -170,7 +170,7 @@ const Form = () => {
                 <Loading color='black'></Loading>
             ) : (
                 <div>
-                    {username.length == 0 ? (
+                    {username.length < 4 ? (
                         <div className='flex flex-col space-y-4'>
                             <input
                                 type='text'
